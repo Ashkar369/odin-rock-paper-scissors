@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissors – Ashkar Siyad</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Rock Paper Scissors</h1>
+    <p class="sub">First to <strong>5 points</strong> wins.</p>
+
+    <div class="choices" id="choices">
+      <button class="choice" type="button" data-choice="rock"><span aria-hidden="true">✊</span>Rock</button>
+      <button class="choice" type="button" data-choice="paper"><span aria-hidden="true">✋</span>Paper</button>
+      <button class="choice" type="button" data-choice="scissors"><span aria-hidden="true">✌️</span>Scissors</button>
+    </div>
+
+    <div class="scoreboard">
+      <div><span class="label">You</span><span class="score" id="humanScore">0</span></div>
+      <div><span class="label">Computer</span><span class="score" id="computerScore">0</span></div>
+    </div>
+
+    <div class="results" id="results" aria-live="polite">
+      <p id="roundResult">Pick rock, paper or scissors to start.</p>
+      <p class="winner" id="winner"></p>
+    </div>
+
+    <button class="btn" id="resetBtn" type="button" hidden>Play again</button>
+
+    <p class="foot"><a href="console.html">Console version</a> · <a href="https://github.com/Ashkar369/odin-rock-paper-scissors">Code on GitHub</a></p>
+  </main>
+</body>
+</html>
